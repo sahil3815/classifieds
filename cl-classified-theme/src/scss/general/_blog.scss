@@ -1,0 +1,382 @@
+.site-content {
+  .content-area {
+    padding: 80px 0;
+  }
+}
+
+.type-page {
+  .post-title-wrap {
+    .post-title {
+      margin-bottom: 10px;
+      word-break: break-all;
+    }
+  }
+}
+
+.post-each {
+  margin-bottom: 30px;
+  background-color: $white;
+  border-radius: $borderRadius8;
+  overflow: hidden;
+  box-shadow: 0 1px 1px 0 rgba($black, 0.1);
+  padding: 25px;
+
+  .rtin-content-area {
+    padding: 25px 30px 5px;
+  }
+
+  .entry-title {
+    margin-bottom: 10px;
+    word-break: break-all;
+
+    a {
+      color: $black;
+      transition: all .4s ease-out;
+
+      &:hover {
+        color: var(--rtcl-primary-color);
+        text-decoration: none;
+      }
+    }
+  }
+
+  .post-meta {
+    @include ul0();
+
+    margin-bottom: 12px;
+
+    li {
+      color: $bodyColor;
+      margin-right: 15px;
+      display: inline;
+      font-size: 15px;
+      font-weight: $medium;
+      line-height: 1.3;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      a {
+        color: $bodyColor;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      i {
+        color: var(--rtcl-primary-color);
+        margin-right: 10px;
+      }
+    }
+  }
+
+  &.post-each-main {
+    margin-bottom: 45px;
+  }
+
+  .post-thumbnail {
+    margin-bottom: 25px;
+
+    .wp-post-image {
+      border-radius: $borderRadius5;
+    }
+  }
+
+  &.post-each-alt {
+    padding: 0;
+
+    .post-thumbnail {
+      margin-bottom: 0;
+
+      .wp-post-image {
+        border-radius: 0;
+      }
+    }
+
+    .entry-title {
+      font-size: 22px;
+      line-height: 1.4;
+    }
+
+    .post-content-area {
+      padding: 20px 25px 25px;
+    }
+  }
+
+  &.post-each-single {
+    margin-bottom: 0;
+    padding: 0;
+    box-shadow: none;
+    border-radius: $borderRadius5;
+
+    .post-thumbnail {
+      margin-bottom: 15px;
+    }
+
+    .post-title-wrap {
+      .post-title {
+        margin-bottom: 10px;
+        word-break: break-all;
+      }
+    }
+
+    .post-meta {
+      margin-bottom: 20px;
+
+      a {
+        text-decoration: none;
+        
+        &:hover {
+          color: var(--rtcl-primary-color);
+        }
+      }
+    }
+
+    .post-footer {
+      margin-top: 10px;
+
+      .post-tags {
+        margin-top: 10px;
+
+        a {
+          color: $bodyColor;
+          background-color: #e7e7e7;
+          padding: 10px 12px;
+          display: inline-block;
+          font-size: 15px;
+          margin-bottom: 5px;
+          margin-right: 5px;
+          transition: all 0.3s ease 0s;
+          border: none;
+          border-radius: $borderRadius5;
+          line-height: 1.2;
+          text-decoration: none;
+
+          &:hover {
+            background-color: var(--rtcl-primary-color);
+            color: $white;
+          }
+        }
+      }
+
+      .post-social {
+        text-align: right;
+        margin-top: 15px;
+        @include small-screen() {
+          text-align: left;
+        }
+
+        .rtin-title {
+          color: #444;
+          padding-right: 5px;
+          font-size: 16px;
+          line-height: 1;
+        }
+
+        .rtin-icon {
+          color: #b1b1b1;
+          font-size: 18px;
+          padding-right: 10px;
+          line-height: 1;
+        }
+
+        .post-social-sharing {
+          display: inline;
+        }
+      }
+
+      .col-md-12 .post-social {
+        text-align: left;
+      }
+    }
+  }
+
+  &.sticky {
+    border: 1px solid #ffd274;
+    border-radius: $borderRadius8;
+  }
+
+  &.post-each-search {
+    padding: 30px;
+  }
+}
+
+.post-social-sharing {
+  @include ul0();
+  font-size: 0;
+
+  li {
+    display: inline-block;
+    margin-right: 5px;
+    margin-bottom: 5px;
+
+    a {
+      background-color: #666;
+      color: #ffffff;
+      font-size: 15px;
+      line-height: 36px;
+      width: 35px;
+      height: 35px;
+      text-align: center;
+      display: inline-block;
+      border-radius: 50%;
+
+      &:hover {
+        color: #ffffff;
+        opacity: .8;
+      }
+    }
+  }
+
+  .social-facebook a {
+    background-color: #3b5999;
+  }
+
+  .social-twitter a {
+    background-color: #55acee;
+  }
+
+  .social-gplus a {
+    background-color: #dd4b39;
+  }
+
+  .social-linkedin a {
+    background-color: #0077B5;
+  }
+
+  .social-pinterest a {
+    background-color: #bd081c;
+  }
+
+  .social-tumblr a {
+    background-color: #34465d;
+  }
+
+  .social-reddit a {
+    background-color: #ff5700;
+  }
+
+  .social-vk a {
+    background-color: #4c75a3;
+  }
+}
+
+.post-author-block {
+  display: flex;
+  align-items: center;
+  @include small-screen() {
+    display: block;
+  }
+
+  .rtin-left {
+    margin-right: 20px;
+    @include small-screen() {
+      margin: 0 0 20px;
+    }
+
+    img {
+      border-radius: 50%;
+    }
+  }
+
+  .rtin-right {
+    flex: 1;
+
+    .author-name {
+      font-size: 18px;
+      line-height: 1.4;
+      margin-bottom: 10px;
+
+      a {
+        color: #111111;
+
+        &:hover {
+          color: var(--rtcl-primary-color);
+        }
+      }
+    }
+
+    .author-bio {
+      font-size: 14px;
+    }
+  }
+}
+
+.post-password-form input[type="password"] {
+  height: 33px;
+}
+
+.site-search .post-each {
+  .post-content p {
+    margin-bottom: 10px;
+  }
+}
+
+.pagination-number {
+  margin-top: 20px;
+
+  ul {
+    display: flex;
+    justify-content: center;
+
+    @include ul0();
+
+    li {
+      margin-right: 10px;
+
+      a {
+        width: 45px;
+        height: 45px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        border: 1px solid #e7e7e7;
+        border-radius: $borderRadius4;
+        text-decoration: none;
+        color: var(--rtcl-primary-color);
+        background-color: $white;
+        transition: all 0.3s;
+
+        &:hover {
+          color: $white;
+          border: 1px solid transparent;
+          background-color: var(--rtcl-primary-color);
+        }
+
+      }
+
+      &.active {
+        a {
+          color: $white;
+          border: 1px solid transparent;
+          background-color: var(--rtcl-primary-color);
+        }
+      }
+
+      &.pagi-previous {
+        a {
+          color: var(--rtcl-primary-color);
+
+          &:hover {
+            color: $white;
+            background-color: var(--rtcl-primary-color);
+          }
+        }
+      }
+
+      &.pagi-next {
+        a {
+          color: var(--rtcl-primary-color);
+
+          &:hover {
+            color: $white;
+            background-color: var(--rtcl-primary-color);
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,79 @@
+.rtcl {
+  .rtcl-grid-view {
+
+    &.columns-3 {
+      @include large-screen() {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      @include mobile-screen() {
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+
+    .rtcl-listing-item {
+      border: none;
+      border-radius: $borderRadius8;
+
+      .listing-thumb {
+        .listing-thumb-inner {
+          overflow: hidden;
+          border-radius: $borderRadius8;
+
+          .rtcl-thumbnail {
+            transition: all 0.3s ease-in-out;
+          }
+
+          .rtcl-meta-buttons {
+            left: auto;
+            bottom: auto;
+            top: 20px;
+            right: 15px;
+            justify-content: right;
+          }
+        }
+      }
+
+      .item-content {
+        padding: 15px 25px 20px;
+
+        .listing-cat-price {
+          margin-bottom: 10px;
+        }
+
+        .rtcl-price-wrap {
+          margin-top: 5px;
+
+          .rtcl-price {
+            font-size: 20px;
+            color: var(--rtcl-primary-color);
+
+            .rtcl-price-meta {
+              font-size: 14px;
+              color: $bodyColor;
+              margin-top: 0;
+              align-items: center;
+
+              .rtcl-on_call {
+                font-size: 20px !important;
+                color: var(--rtcl-primary-color);
+                font-weight: 600;
+              }
+            }
+          }
+        }
+
+      }
+
+      &:hover {
+        .listing-thumb {
+          .listing-thumb-inner {
+            .rtcl-thumbnail {
+              transform: scale(1.1);
+            }
+          }
+        }
+      }
+    }
+  }
+}

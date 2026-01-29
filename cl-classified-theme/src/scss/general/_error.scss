@@ -1,0 +1,41 @@
+/*-------------------------------------
+#. Error 404
+---------------------------------------*/
+.error-page {
+  text-align: center;
+
+  h2 {
+    margin-top: 30px;
+    margin-bottom: 0;
+
+    @include only-large-screen() {
+      font-size: 64px;
+    }
+  }
+
+  .error-subtitle {
+    font-family: $headingFont;
+    color: $black;
+    font-weight: 500;
+    margin-bottom: 0;
+
+    @include only-large-screen() {
+      font-size: 36px;
+    }
+  }
+
+  .error-btn {
+    color: #ffffff;
+    background-color: var(--rtcl-primary-color);
+    padding: 20px 35px;
+    border-radius: $borderRadius5;
+    margin-top: 30px;
+    display: inline-block;
+    font-size: 18px;
+    line-height: 1.2;
+
+    &:hover {
+      background-color: var(--rtcl-secondary-color);
+    }
+  }
+}

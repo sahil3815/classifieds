@@ -1,0 +1,50 @@
+.rt-el-post {
+  .rtin-each {
+    background-color: $white;
+    margin-bottom: 30px;
+
+    .rtin-content-area {
+      padding: 25px;
+
+      .post-meta {
+        margin: 0 0 15px;
+        padding: 0;
+        list-style: none;
+
+        li {
+          display: inline-block;
+          color: $bodyColor;
+
+          a {
+            color: inherit;
+          }
+
+          &.date {
+            background-color: var(--rtcl-lite-primary-color);
+            border-radius: 30px;
+            font-size: 14px;
+            border: 1px solid var(--rtcl-primary-color);
+            color: var(--rtcl-primary-color);
+            padding: 3px 8px;
+            margin-right: 5px;
+          }
+        }
+      }
+
+      .post-title {
+        font-size: 22px;
+        margin-bottom: 0;
+        line-height: 1.2;
+
+        a {
+          color: $black;
+          transition: all 0.3s ease-in-out;
+
+          &:hover {
+            color: var(--rtcl-primary-color);
+          }
+        }
+      }
+    }
+  }
+}

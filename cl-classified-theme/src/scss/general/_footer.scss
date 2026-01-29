@@ -1,0 +1,63 @@
+a.scrollToTop {
+  background-color: var(--rtcl-primary-color);
+  color: $white;
+  font-size: 14px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  z-index: 100;
+  text-align: center;
+  transition: all 1s ease-out;
+  border: none;
+  border-radius: 50%;
+  display: none;
+
+  &:hover,
+  &:focus {
+    background-color: var(--rtcl-primary-color);
+    color: #fff;
+  }
+}
+
+.footer-bottom {
+  background-color: #1c1d20;
+  color: #91939d;
+  padding: 40px 0;
+  border-top: 1px solid #2e2e2e;
+
+  .row {
+    flex-wrap: initial;
+
+    @include small-screen() {
+      flex-direction: column;
+      gap: 15px;
+    }
+  }
+
+  .footer-copyright-area {
+    @include small-screen() {
+      order: 2;
+    }
+  }
+
+  @include small-screen() {
+    text-align: center;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .footer-copyright {
+    margin-bottom: 0;
+  }
+
+  .cl-app-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}

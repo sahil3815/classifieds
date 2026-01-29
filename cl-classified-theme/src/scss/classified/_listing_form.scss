@@ -1,0 +1,177 @@
+.rtcl-form-page {
+  .content-area {
+    background-color: transparent;
+  }
+
+  .main-content {
+    .rtcl-post-form-wrap,
+    .rtcl-listing-info-selecting {
+      background-color: transparent;
+      padding: 0;
+      box-shadow: none;
+
+      a:hover {
+        color: var(--rtcl-secondary-color);
+      }
+
+      .rtcl-post-section-title {
+        h3 {
+          font-weight: 700;
+          color: $black;
+
+          .rtcl-icon {
+            color: var(--rtcl-primary-color);
+          }
+
+          &:before {
+            background-color: $borderColor;
+          }
+        }
+      }
+
+      .form-group {
+        margin-bottom: 20px;
+
+        label {
+          color: $black;
+          display: block;
+          font-size: 15px;
+          font-weight: 600;
+          margin-bottom: 6px;
+          text-transform: capitalize;
+        }
+      }
+
+      .rtcl-post-section {
+        margin-bottom: 30px;
+
+        .rtcl-booking-holder {
+          .form-group {
+            label {
+              font-weight: 400;
+              display: inline-block;
+              color: inherit;
+            }
+          }
+        }
+      }
+
+      .rtcl-submit-btn {
+        color: $white !important;
+        padding: 10px 16px;
+        border-radius: $borderRadius5;
+        text-decoration: none;
+        font-size: 16px;
+        line-height: 1.3;
+        border: 1px solid var(--rtcl-primary-color);
+        background-color: var(--rtcl-primary-color);
+        display: inline-block;
+        transition: all 0.3s;
+
+        &:hover {
+          background-color: var(--rtcl-secondary-color);
+          border: 1px solid var(--rtcl-secondary-color);
+        }
+      }
+    }
+
+    .rtcl-post-contact-details {
+      .rtcl-map-wrap {
+        .rtcl-form-check {
+          padding-left: 0;
+        }
+      }
+    }
+  }
+
+  .rtcl-post-marketplace {
+    .rtcl-marketplace-checkbox {
+      label {
+        margin-bottom: 0 !important;
+        font-weight: 400 !important;
+        color: #797f89 !important;
+      }
+    }
+
+    .rtcl-marketplace-downloadable-table {
+      th {
+        color: #111111;
+      }
+
+      th,
+      td {
+        padding: 10px;
+      }
+
+      .input_text {
+        outline: none;
+        box-shadow: none;
+        height: 34px;
+      }
+
+      .button {
+        padding: 8px 15px;
+        background-color: var(--rtcl-primary-color);
+        line-height: 1.4;
+        border: none;
+        color: #ffffff;
+
+        &:hover {
+          background-color: var(--rtcl-secondary-color);
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}
+
+.rtcl-EditAccountForm .phone-row .selected-country-flag,
+#rtcl-post-form .rtcl-post-contact-details .phone-row .selected-country-flag {
+  top: 7px;
+}
+
+.rtcl-bhs .rtcl-day-actions .form-check-input,
+#rtcl-bhs-holder input#rtcl-active-bhs,
+#rtcl-bhs-holder input#rtcl-active-special-bhs {
+  top: 0.28rem;
+}
+
+.rtcl-bhs .rtcl-day-actions .form-check-input.check-time-slot {
+  top: 2rem;
+}
+
+/*--------- Form builder compatibility ---------*/
+
+#rtcl-form-builder-container {
+  background: transparent;
+  padding: 0;
+  box-shadow: none;
+
+  .rtcl-form-list {
+    padding-top: 0;
+  }
+
+  .rtcl-fb-sections {
+
+    .rtcl-fb-section {
+
+      &:first-child {
+        .section-header {
+          padding-top: 0;
+        }
+      }
+
+      .section-header {
+        margin-bottom: 25px;
+      }
+    }
+  }
+}
+
+.rtcl-post-section-title {
+  .selected-cat {
+    .rtcl-icon {
+      color: inherit;
+    }
+  }
+}

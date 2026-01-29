@@ -1,0 +1,57 @@
+.elementor-widget-rtcl-listing-items {
+  .rtcl-listings-sc-wrapper {
+    .rtcl-grid-view {
+
+      &.rtcl-style-1-view {
+        .rtcl-listing-item {
+          margin-bottom: 0;
+
+          .listing-thumb {
+            &:after {
+              border-radius: 8px 0 0 0;
+            }
+          }
+
+          .rtcl-meta-buttons-wrap {
+            gap: 6px;
+
+            &.horizontal-layout {
+              left: auto;
+              bottom: auto;
+              top: 20px;
+              right: 15px;
+            }
+
+            .rtcl-el-button {
+              width: 34px;
+              height: 34px;
+              border-radius: 50%;
+
+              a {
+                width: 34px;
+                height: 34px;
+                border-radius: 50%;
+                color: #797f89;
+                background-color: #ffffff;
+
+                &:hover {
+                  background-color: #f9423a;
+                  color: #ffffff;
+                }
+              }
+
+            }
+          }
+
+          .rtin-right {
+            margin-top: 10px;
+          }
+
+          .rtcl-price {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}

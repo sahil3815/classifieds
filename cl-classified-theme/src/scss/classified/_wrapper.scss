@@ -1,0 +1,36 @@
+.rtcl {
+  .rtcl-container {
+    padding: 80px 12px;
+    margin-top: 0;
+    margin-bottom: 0;
+
+    @media screen and (min-width: 576px) {
+      max-width: 540px;
+    }
+    @media screen and (min-width: 768px) {
+      max-width: 720px;
+    }
+    @media screen and (min-width: 992px) {
+      max-width: 960px;
+    }
+    @media screen and (min-width: 1200px) {
+      max-width: 1140px;
+    }
+    @media screen and (min-width: 1400px) {
+      max-width: 1320px;
+    }
+
+    .rtcl-content-wrapper {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+  }
+}
+
+.rtcl.post-type-archive-rtcl_listing .rtcl-content-wrapper > #primary {
+  order: initial;
+}
+
+.rtcl.post-type-archive-rtcl_listing.sidebar-in-left .rtcl-content-wrapper > #primary {
+  order: 2;
+}

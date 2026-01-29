@@ -1,0 +1,158 @@
+.store-info-item-block {
+  border: 1px solid $borderColor;
+  color: $bodyColor;
+  box-shadow: 0 0 20px #f0f0f0;
+  border-radius: $borderRadius4;
+  padding: 10px 16px;
+  background-color: $white;
+  transition: all 0.3s ease-in-out;
+}
+
+.rtcl {
+  &.store-content-wrap {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+
+    .store-details-content-wrap {
+      background-color: $white;
+      box-shadow: 0 0 20px #f0f0f0;
+      border-radius: $borderRadius8;
+      padding: 25px;
+    }
+
+    .store-banner {
+      margin: 0 0 30px;
+
+      .banner {
+        border-radius: $borderRadius8;
+      }
+
+      .store-name-logo {
+        gap: 20px;
+
+        .store-logo {
+          max-width: 220px;
+          background: none;
+          border-radius: $borderRadius4;
+
+          img {
+            border-radius: $borderRadius4;
+          }
+        }
+
+        .store-info {
+          padding: 0;
+          flex: 1;
+
+          .store-name {
+            h2 {
+              margin-bottom: 10px;
+            }
+          }
+        }
+      }
+    }
+
+    .store-information {
+      .store-info {
+        background-color: $white;
+        box-shadow: 0 0 20px #f0f0f0;
+        border-radius: $borderRadius8;
+        padding: 25px;
+
+        @include small-screen() {
+          margin-top: 30px;
+        }
+
+        .store-info-item {
+          border: none;
+          margin-top: 15px;
+          padding: 0;
+
+          .icon {
+            padding-right: 5px;
+
+            span {
+              color: var(--rtcl-primary-color);
+            }
+          }
+
+          &:first-child {
+            margin-top: 0;
+          }
+
+          &.store-hour {
+            @extend .store-info-item-block;
+
+          }
+
+          &.store-address {
+            @extend .store-info-item-block;
+          }
+
+          &.store-phone {
+            .icon {
+              display: none;
+            }
+
+            .text {
+              flex: 1;
+
+              .numbers {
+                @extend .store-info-item-block;
+
+                a {
+                  color: inherit;
+                }
+              }
+            }
+          }
+
+          &.store-email {
+            .store-email-label {
+              @extend .store-info-item-block;
+            }
+
+            #store-email-form {
+              .form-group {
+                margin-bottom: 20px;
+
+                textarea {
+                  height: auto;
+                }
+              }
+
+              .sc-submit {
+                @extend .rtin-button;
+              }
+            }
+          }
+        }
+      }
+
+      .store-details {
+        .is-slogan {
+          font-size: 20px;
+        }
+      }
+
+      .store-listing-list {
+        & > h3 {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+
+  #store-details-modal {
+    .store-more-details {
+      .more-item {
+        h3 {
+          font-size: 20px;
+          border-color: $borderColor;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+.rtcl-checkout {
+  .content-area {
+    background-color: transparent;
+  }
+
+  .main-content {
+    .rtcl-checkout-content {
+      background-color: transparent;
+      box-shadow: none;
+      padding: 0;
+
+      #rtcl-checkout-form {
+        .rtcl-submit-btn-wrap {
+          .btn {
+            @extend .rtin-button;
+          }
+        }
+      }
+    }
+  }
+}
+
+.rtcl {
+  .rtcl-payment-receipt {
+    .action-btn {
+      .btn {
+        @extend .rtin-button;
+      }
+    }
+  }
+}
+
+.rtcl .rtcl-checkout-pricing-wrapper .rtcl-checkout-pricing .rtcl-membership-promotions .promotion-item > span:before {
+  background-color: #ffe0de;
+}

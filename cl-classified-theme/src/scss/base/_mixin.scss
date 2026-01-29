@@ -1,0 +1,54 @@
+// Responsive Breakpoint
+@mixin large-screen() {
+  @media screen and (max-width: 1199.98px) {
+    @content;
+  }
+}
+
+@mixin medium-screen() {
+  @media (max-width: 991.98px) {
+    @content;
+  }
+}
+
+@mixin small-screen() {
+  @media screen and (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin extra-small-screen() {
+  @media screen and (max-width: 575px) {
+    @content;
+  }
+}
+
+@mixin mobile-screen() {
+  @media screen and (max-width: 480px) {
+    @content;
+  }
+}
+
+@mixin only-large-screen() {
+  @media screen and (min-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin only-medium-screen() {
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    @content;
+  }
+}
+
+@mixin only-small-screen() {
+  @media screen and (min-width: 576px) and (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin ul0() {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}

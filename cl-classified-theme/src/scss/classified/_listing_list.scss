@@ -1,0 +1,72 @@
+.rtcl {
+  .rtcl-list-view {
+    .rtcl-listing-item {
+      gap: 20px;
+      padding: 15px 20px 15px 15px;
+      border-radius: $borderRadius8;
+
+      .listing-thumb {
+
+        .listing-thumb-inner {
+          .rtcl-thumbnail {
+            border-radius: $borderRadius8;
+          }
+        }
+
+        @media screen and (min-width: 768px) {
+          flex: 0 0 33%;
+          max-width: 33%;
+        }
+      }
+
+      .item-content {
+        padding: 0;
+
+        .listing-cat-price {
+          display: flex;
+          align-items: center;
+          margin-bottom: 10px;
+          gap: 10px;
+
+          @include small-screen() {
+            flex-wrap: wrap;
+          }
+
+          .rtcl-price-wrap {
+            margin-top: 0;
+            margin-left: auto;
+
+            @include small-screen() {
+              margin-left: initial;
+            }
+
+            .rtcl-price {
+              font-size: 22px;
+              color: var(--rtcl-primary-color);
+            }
+          }
+        }
+
+        .rtcl-listing-meta-data {
+          li {
+            margin-right: 15px;
+
+            a {
+              &:hover {
+                text-decoration: none;
+              }
+            }
+          }
+        }
+      }
+
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .rtcl .rtcl-user-ad-listing-wrapper .rtcl-list-view .rtcl-listing-item .listing-thumb {
+    flex: 0 0 280px;
+    max-width: 280px;
+  }
+}

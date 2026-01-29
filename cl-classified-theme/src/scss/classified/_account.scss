@@ -1,0 +1,49 @@
+/*-------------------------------------
+#. My Account
+---------------------------------------*/
+
+/*-------- Dashboard --------*/
+
+.rtcl-account {
+  .rtcl-MyAccount-wrap {
+    .rtcl-MyAccount-content {
+      #rtcl-store-content-wrap,
+      .rtcl-EditAccountForm {
+        .rtcl-field-col {
+          .btn {
+            box-shadow: none;
+            outline: none;
+            border: none;
+            font-size: 15px;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+}
+
+body.rtcl-account {
+  &:not(.page-template-rtcl-canvas_template) {
+    .site-content-block {
+      .main-content {
+        padding: 0;
+        background-color: transparent;
+        border-radius: 0;
+        box-shadow: none;
+      }
+    }
+  }
+}
+
+.rtcl-MyAccount-wrap .rtcl-MyAccount-navigation ul li.rtcl-MyAccount-navigation-link.rtcl-MyAccount-navigation-link--logout {
+  background-color: #ffefdb;
+
+  a {
+    color: #ff8800;
+
+    &:before {
+      background-color: #ff8800 !important;
+    }
+  }
+}

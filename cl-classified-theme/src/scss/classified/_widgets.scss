@@ -1,0 +1,628 @@
+.rtcl-sidebar-wrapper {
+  & > div {
+    margin-bottom: 30px;
+    border-radius: $borderRadius8;
+    border: none;
+    padding: 0;
+    background-color: $white;
+    color: $bodyColor;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .rtcl-widget-heading {
+    h3 {
+      background-color: var(--rtcl-primary-color);
+      color: $white;
+      padding: 10px 25px;
+      border-radius: $borderRadius8 $borderRadius8 0 0;
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 0;
+
+      &:after {
+        content: none;
+      }
+    }
+
+    & + div,
+    & + ul {
+      padding: 22px 25px;
+    }
+  }
+
+  .rtcl-widget-filter-class {
+    .panel-block {
+      padding: 25px;
+
+      .ui-accordion-item {
+        .ui-accordion-title {
+          font-weight: 700;
+          color: $liteBlack;
+          border-color: $borderColor;
+
+          .ui-accordion-icon {
+            background-color: var(--rtcl-lite-primary-color);
+            border: 1px solid var(--rtcl-primary-color);
+            color: var(--rtcl-primary-color);
+            border-radius: 50%;
+
+            &:before {
+              padding: 0;
+              margin: 0;
+              width: 20px;
+              height: 20px;
+              transform: translateY(3px);
+            }
+          }
+
+          &:hover {
+            text-decoration: none;
+          }
+        }
+
+        &.rtcl-radius-filter {
+
+          .rtcl-range-slider-field {
+            .rtcl-range-label {
+              margin-top: 10px;
+            }
+
+            .rtcl-range-slider-input {
+              width: 100%;
+            }
+          }
+
+        }
+
+      }
+
+      ul {
+        li {
+          &.has-sub {
+            .arrow {
+              .rtcl-icon {
+                color: #b0b0b0;
+                font-size: 10px;
+              }
+            }
+          }
+
+          &:before {
+            content: none;
+          }
+
+          &.is-opener {
+            span {
+              i {
+                color: var(--rtcl-primary-color);
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .ui-buttons {
+      .rtcl-filter-btn {
+        background-color: var(--rtcl-primary-color);
+        color: $white;
+        padding: 10px 16px;
+        border-radius: $borderRadius8;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 16px;
+        text-transform: capitalize;
+        border: 1px solid var(--rtcl-primary-color);
+        display: inline-block;
+        transition: all 0.3s;
+
+        &:hover {
+          background-color: transparent;
+          color: $black;
+        }
+      }
+    }
+  }
+
+  .rtcl-widget-ajax-filter-class {
+    .rtcl-ajax-filter-wrap {
+      background-color: transparent;
+      padding: 0;
+    }
+  }
+
+  .rtcl-category-list {
+    li {
+      img {
+        max-width: 15px;
+        max-height: 15px;
+        margin-right: 10px;
+      }
+
+      .rtcl-category-list {
+        margin-left: 10px;
+      }
+    }
+  }
+
+  .rtcl-widget-listings {
+    .rtcl-grid-view .rtcl-listing-item .item-content {
+      padding: 20px 0 0;
+
+      .listing-title {
+        font-size: 16px;
+        font-weight: 600;
+        padding: 0;
+        color: #222222;
+
+        a {
+          color: inherit;
+        }
+
+        &:after {
+          content: none;
+        }
+      }
+
+      .listing-meta {
+        display: flex;
+        flex-direction: column;
+
+        li {
+          span + span {
+            margin-left: 15px;
+          }
+        }
+
+        .rtcl-icon {
+          margin-right: 7px;
+        }
+      }
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+      background-color: var(--rtcl-primary-color);
+      color: #ffffff;
+      height: 32px;
+      width: 32px;
+      border-radius: 3px;
+
+      &:after {
+        font-size: 16px;
+        line-height: 1;
+      }
+    }
+  }
+
+  .rtcl-widget-search {
+    .form-group {
+      margin-bottom: 15px;
+
+      .rtcl-action-buttons {
+        .btn {
+          padding: 10px 15px;
+          font-size: 16px;
+          font-weight: 600;
+        }
+      }
+
+      label {
+        font-size: 15px;
+        font-weight: 500;
+        color: #222222;
+        margin-bottom: 8px;
+      }
+    }
+  }
+
+}
+
+.rtcl {
+  .rtcl-content-wrapper {
+    .listing-sidebar {
+      margin-bottom: 25px;
+
+      .rtcl-price-wrap {
+        margin-bottom: 25px;
+
+        .rtcl-price {
+          position: relative;
+          align-items: center;
+          background-color: var(--rtcl-primary-color);
+          font-size: 26px;
+          color: $white;
+          margin-left: 27px;
+          font-weight: 700;
+          height: 58px;
+          padding: 14px 24px 14px 24px;
+          border-radius: 0 8px 8px 0;
+          transition: all 0.2s ease-in;
+
+          .rtcl-price-meta {
+            font-size: 16px;
+            font-weight: 400;
+            margin-left: 5px;
+            margin-top: 0;
+          }
+
+          &:after {
+            content: "";
+            position: absolute;
+            display: block;
+            top: 50%;
+            left: -21px;
+            transform: translateY(-50%) rotate(-45deg);
+            height: 41px;
+            width: 41px;
+            border-radius: 8px 0 0 0;
+            background-color: var(--rtcl-primary-color);
+            transition: all 0.2s ease-in;
+            z-index: -1;
+          }
+        }
+      }
+
+      .rtcl-listing-user-info {
+        background: #fff;
+        border: 1px solid $borderColor;
+        box-shadow: 0 0 20px #f0f0f0;
+        border-radius: 8px;
+        padding: 20px 25px;
+
+        .rtcl-listing-side-title {
+          padding: 0;
+          border: none;
+          margin-bottom: 15px;
+
+          h3 {
+            font-weight: $bold;
+          }
+        }
+
+        .rtcl-list-group {
+          padding: 0;
+
+          .rtcl-list-group-item {
+            color: $bodyColor;
+            border: none;
+            padding: 0;
+            margin-bottom: 10px;
+            font-size: 16px;
+
+            .media {
+              display: inline-flex;
+              width: 100%;
+
+              .rtcl-icon {
+                display: none;
+              }
+            }
+
+            .media-body {
+              flex: 1;
+
+              > span {
+                display: inline-block;
+                margin-bottom: 5px;
+              }
+            }
+
+            .locations,
+            .numbers {
+              border: 1px solid $borderColor;
+              box-shadow: 0 0 20px #f0f0f0;
+              border-radius: 4px;
+              display: block;
+              padding: 10px 16px;
+              background-color: $white;
+              font-weight: 400;
+              transition: all 0.3s ease-in-out;
+            }
+
+            .numbers {
+              a {
+                color: inherit;
+                display: block;
+              }
+
+              &:hover {
+                background-color: var(--rtcl-primary-color);
+                color: $white;
+
+                .rtcl-icon {
+                  color: $white !important;
+                }
+              }
+            }
+
+            &.rtin-author {
+              margin-bottom: 15px;
+
+              & > img {
+                margin-right: 12px;
+              }
+
+              .rtin-name {
+                color: $bodyColor;
+                font-size: 16px;
+                margin-bottom: 0;
+              }
+            }
+
+            &.reveal-phone {
+              .media {
+                .revealed-whatsapp-number,
+                .revealed-phone-number {
+                  .rtcl-icon {
+                    display: inline-block;
+                    color: var(--rtcl-primary-color);
+                  }
+                }
+              }
+            }
+
+            &.rtcl-do-email {
+              .media-body {
+                display: inline-block;
+
+                .rtcl-do-email-link {
+                  color: $bodyColor;
+                  border: 1px solid $borderColor;
+                  box-shadow: 0 0 20px #f0f0f0;
+                  border-radius: 4px;
+                  display: block;
+                  padding: 10px 16px;
+                  background-color: $white;
+                  transition: all 0.3s ease-in-out;
+
+                  &:before {
+                    content: '\f0e0';
+                    font-family: "Font Awesome 6 Free";
+                    font-weight: 600;
+                    color: var(--rtcl-primary-color);
+                    margin-right: 5px;
+                  }
+
+                  span {
+                    font-weight: 400;
+                  }
+
+                  &:hover {
+                    background-color: var(--rtcl-primary-color);
+                    color: $white;
+
+                    &:before {
+                      color: $white;
+                    }
+                  }
+                }
+              }
+
+              #rtcl-contact-form {
+                .rtcl-form-group {
+                  margin-bottom: 10px;
+
+                  #rtcl-contact-message {
+                    height: auto;
+                  }
+                }
+
+                .rtcl-btn {
+                  background-color: var(--rtcl-primary-color);
+                  border: none;
+                  padding: 12px 15px;
+                  line-height: 1;
+                  border-radius: $borderRadius5;
+
+                  &:hover {
+                    background-color: var(--rtcl-secondary-color);
+                  }
+                }
+              }
+
+            }
+
+            &.rtcl-contact-seller,
+            &.rtcl-website {
+
+              .rtcl-chat-link,
+              .rtcl-website-link {
+                color: $bodyColor !important;
+                border: 1px solid $borderColor !important;
+                box-shadow: 0 0 20px #f0f0f0;
+                border-radius: 4px;
+                display: block;
+                padding: 10px 16px;
+                background-color: $white !important;
+                font-size: 16px;
+                font-weight: 400;
+                text-align: left;
+                transition: all 0.3s ease-in-out;
+
+                .rtcl-icon {
+                  color: var(--rtcl-primary-color);
+                }
+
+                &:hover {
+                  background-color: var(--rtcl-primary-color) !important;
+                  color: $white !important;
+                  border-color: var(--rtcl-primary-color) !important;
+
+                  .rtcl-icon {
+                    color: $white;
+                  }
+                }
+              }
+
+              .rtcl-website-link {
+                .rtcl-icon {
+                  display: none;
+                }
+
+                &:before {
+                  content: '\f0c1';
+                  font-family: "Font Awesome 6 Free";
+                  font-weight: 600;
+                  color: var(--rtcl-primary-color);
+                  margin-right: 5px;
+                }
+
+                &:hover {
+                  &:before {
+                    color: $white;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      & + .rtcl-sidebar-wrapper {
+        @media screen and (min-width: 768px) {
+          display: block;
+          flex-basis: 100%;
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.rtcl-geo-address-field i.rtcl-icon {
+  right: 5px;
+}
+
+.rtcl-ajax-filter-result-wrap {
+  @media screen and (min-width: 992px) {
+    .rtcl-grid-view {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  @media screen and (max-width: 991px) {
+    .rtcl-grid-view {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    .rtcl-grid-view {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}
+
+.rtcl-widget-ajax-filter-class {
+  background-color: #ffffff;
+  border-radius: 8px;
+
+  .rtcl-ajax-filter-wrap {
+    padding: 25px;
+
+    .rtcl-ajax-filter-item {
+
+      .rtcl-noUiSlider {
+        margin-top: 7px;
+      }
+
+      .rtcl-more-less-btn {
+        .rtcl-icon {
+          font-size: 15px;
+          line-height: 1;
+          color: #91939d;
+          border: 1px solid #91939d;
+          border-radius: 50%;
+          width: 16px;
+          height: 16px;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+
+          .text {
+            grid-gap: 6px;
+          }
+        }
+      }
+
+      .rtcl-filter-title-wrap {
+
+        .rtcl-filter-title {
+          font-weight: 700;
+          color: $liteBlack;
+          border-color: $borderColor;
+          align-items: center;
+        }
+
+        .rtcl-icon {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          width: 22px;
+          height: 22px;
+          border-radius: 50%;
+          background-color: var(--rtcl-lite-primary-color);
+          border: 1px solid var(--rtcl-primary-color);
+          color: var(--rtcl-primary-color);
+
+          &.rtcl-reset {
+            width: 18px;
+            height: 18px;
+            border: none;
+            background-color: transparent;
+          }
+        }
+      }
+
+      .rtcl-ajax-filter-data-item .rtcl-ajax-filter-diiWrap .rtcl-load-sub-list .rtcl-icon {
+        color: #91939d;
+      }
+
+      .rtcl-filter-checkbox-item {
+        label {
+          font-size: 15px;
+          transition: all 0.3s ease-in-out;
+
+          &:before {
+            border-color: #91939d;
+            margin-right: 6px;
+          }
+
+          &:hover {
+            color: var(--rtcl-primary-color);
+          }
+        }
+
+        input.rtcl-filter-checkbox[type=checkbox]:checked + label::before {
+          background-color: var(--rtcl-primary-color);
+          border-color: var(--rtcl-primary-color);
+        }
+
+        input.rtcl-filter-checkbox[type=radio]:checked + label:after {
+          transform: scale(0.8);
+        }
+      }
+
+    }
+  }
+
+  & > h5 {
+    background-color: var(--rtcl-primary-color);
+    color: #ffffff;
+    padding: 10px 25px;
+    border-radius: 8px 8px 0 0;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 0;
+  }
+}
+
+.rtcl-ajax-listings {
+  .no-listing-found {
+    background-color: #ffffff;
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "radiustheme/cl-classified",
+  "authors": [
+    {
+      "name": "RadiusTheme",
+      "email": "radiustheme@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "RadiusTheme\\ClassifiedLite\\": "inc"
+    }
+  },
+  "description": "",
+  "require-dev": {
+    "dealerdirect/phpcodesniffer-composer-installer": "*",
+    "phpcompatibility/php-compatibility": "*",
+    "wp-coding-standards/wpcs": "*"
+  },
+  "config": {
+    "allow-plugins": {
+      "dealerdirect/phpcodesniffer-composer-installer": true
+    },
+    "optimize-autoloader": true,
+    "platform-check": false
+  }
+}

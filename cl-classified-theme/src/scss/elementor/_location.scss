@@ -1,0 +1,53 @@
+.rtcl-el-listing-location-box {
+  &.location-box-style-2 {
+    .rtin-content {
+      text-align: center;
+      height: 100%;
+      padding: 25px;
+      transform: none;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      .rtin-counter {
+        order: -1;
+        color: $white;
+        background-color: rgba(0, 0, 0, 0.7);
+        border: 1px solid $white;
+        padding: 2px 10px;
+        margin: 0 auto 6px;
+        border-radius: 50px;
+        display: inline-block;
+      }
+
+      .rtin-title {
+        font-size: 24px;
+        margin: 0 auto;
+        position: relative;
+
+        &:after {
+          content: "";
+          background-color: var(--rtcl-primary-color);
+          height: 5px;
+          width: 100%;
+          position: absolute;
+          bottom: 3px;
+          left: 50%;
+          transform: translateX(-50%);
+          z-index: -2;
+        }
+      }
+    }
+
+    &:hover {
+      .rtin-content {
+        padding: 25px;
+
+        .rtin-counter {
+          background-color: var(--rtcl-primary-color);
+        }
+
+      }
+    }
+  }
+}
